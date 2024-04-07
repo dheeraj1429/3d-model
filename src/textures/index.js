@@ -17,6 +17,8 @@ import boxTexture1 from './textures/Material.001_normal.png'
 import boxTexture2 from './textures/Material.002_metallicRoughness.png'
 import boxTexture3 from './textures/Material.002_normal.png'
 
+import diffuseMap from './Diffuse.jpg'
+
 export const boxTextures = [boxTexture1, boxTexture2, boxTexture3]
 
 export const smooth = [smoothTexture1, smoothTexture2, smoothTexture3, smoothTexture4]
@@ -24,3 +26,5 @@ export const smooth = [smoothTexture1, smoothTexture2, smoothTexture3, smoothTex
 export const rough = [roughTexture1, roughTexture2, roughTexture3, roughTexture4]
 
 export const beatup = [beatupTexture1, beatupTexture2, beatupTexture3, beatupTexture4]
+
+export const diffuseTexture = diffuseMap

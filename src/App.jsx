@@ -7,11 +7,7 @@ import { beatup } from './textures'
 export default function App() {
   const { scene, materials, nodes } = useLoader(GLTFLoader, '/models/taser__taser_gun_model_cs2.glb')
   // const texture = useLoader(THREE.TextureLoader, beatup[0])
-  const [colorMap, normalMap, roughnessMap, metalnessMap] = useTexture(beatup)
-
-  console.log({ materials })
-
-  console.log()
+  const [colorMap, normalMap, roughnessMap, metalnessMap] = useTexture([beatup[0], beatup[1], beatup[2], beatup[3]])
 
   useLayoutEffect(() => {
     Object.assign(materials[Object.keys(materials)?.[0]], {
